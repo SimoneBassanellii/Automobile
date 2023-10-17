@@ -11,5 +11,10 @@ namespace Automobile
         {
 
         }
+
+        private void accensione_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
