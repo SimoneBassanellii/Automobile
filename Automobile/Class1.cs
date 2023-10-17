@@ -6,9 +6,15 @@ using System.Threading.Tasks;
 
 namespace Automobile
 {
-    class Class1
+    public class automobile 
     {
-        protected int _velocità;
+        protected int _Velocità;
+        protected bool _Acceso;
+        protected int _Marcia;
+    }
+
+    public automobile (int _velocità, bool _acceso, int _marcia);
+    {
 
     }
 }
