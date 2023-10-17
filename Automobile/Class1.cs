@@ -13,13 +13,6 @@ namespace Automobile
         protected bool _acceso;
         protected int _marcia;
 
-        public Automobile (int Velocità, bool Acceso, int Marcia)
-        {
-            _velocità = Velocità;
-            _acceso = false;
-            _marcia = Marcia;
-        }
-
         public void AccendiMotore()
         {
             _acceso = true;
@@ -41,7 +34,7 @@ namespace Automobile
         {
             if (_acceso = true && _marcia < 5)
             {
-                Velocità += 10;
+                Velocità += 5;
             }
         }
 
@@ -49,11 +42,25 @@ namespace Automobile
         {
             if (_acceso = true && _marcia > 0)
             {
-                Velocità -= 10;
+                Velocità -= 5;
             }
         }
 
+        public void Aumentomarcia(int Velocit)
+        {
+            if (_acceso && _marcia < 5)
+            {
+                _marcia++;
+            }
+        }
 
+        public void diminuiscimarcia(int Velocit)
+        {
+            if (_acceso && _marcia > 0)
+            {
+                _marcia--;
+            }
+        }
 
     } 
 }
