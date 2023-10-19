@@ -18,6 +18,14 @@ namespace Automobile
         {
             auto.AccendiMotore();
             MessageBox.Show("Auto accesa");
+            listView1.Clear();  
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            auto.SpegniMotore();
+            MessageBox.Show("Auto spenta");
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -46,7 +47,7 @@ namespace Automobile
             }
         }
 
-        public void Aumentomarcia(int Velocit)
+        public void Aumentomarcia(int Velocit, int marcia)
         {
             if (_acceso && _marcia < 5)
             {
