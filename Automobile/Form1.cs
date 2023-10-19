@@ -2,8 +2,10 @@ namespace Automobile
 {
     public partial class Form1 : Form
     {
+        Automobile auto = new Automobile();
         public Form1()
         {
+           
             InitializeComponent();
         }
 
@@ -14,7 +16,8 @@ namespace Automobile
 
         private void accensione_Click(object sender, EventArgs e)
         {
-
+            auto.AccendiMotore();
+            MessageBox.Show("Auto accesa");
         }
     }
 }

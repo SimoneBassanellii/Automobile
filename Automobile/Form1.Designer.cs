@@ -31,7 +31,8 @@
             this.accensione = new System.Windows.Forms.Button();
             this.Acceleratore = new System.Windows.Forms.Button();
             this.Freno = new System.Windows.Forms.Button();
-            this.Tacchimetro = new System.Windows.Forms.Label();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // accensione
@@ -40,7 +41,7 @@
             this.accensione.Name = "accensione";
             this.accensione.Size = new System.Drawing.Size(58, 56);
             this.accensione.TabIndex = 0;
-            this.accensione.Text = "On/off";
+            this.accensione.Text = "Start";
             this.accensione.UseVisualStyleBackColor = true;
             this.accensione.Click += new System.EventHandler(this.accensione_Click);
             // 
@@ -62,22 +63,31 @@
             this.Freno.Text = "Freno";
             this.Freno.UseVisualStyleBackColor = true;
             // 
-            // Tacchimetro
+            // listView1
             // 
-            this.Tacchimetro.AutoSize = true;
-            this.Tacchimetro.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Tacchimetro.Location = new System.Drawing.Point(236, 218);
-            this.Tacchimetro.Name = "Tacchimetro";
-            this.Tacchimetro.Size = new System.Drawing.Size(106, 65);
-            this.Tacchimetro.TabIndex = 3;
-            this.Tacchimetro.Text = "000";
+            this.listView1.Location = new System.Drawing.Point(189, 110);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(276, 150);
+            this.listView1.TabIndex = 3;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(504, 406);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(58, 56);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Stop";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(696, 515);
-            this.Controls.Add(this.Tacchimetro);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.Freno);
             this.Controls.Add(this.Acceleratore);
             this.Controls.Add(this.accensione);
@@ -85,7 +95,6 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -94,6 +103,7 @@
         private Button accensione;
         private Button Acceleratore;
         private Button Freno;
-        private Label Tacchimetro;
+        private ListView listView1;
+        private Button button1;
     }
 }
