@@ -27,5 +27,10 @@ namespace Automobile
             auto.SpegniMotore();
             MessageBox.Show("Auto spenta");
         }
+
+        private void Acceleratore_Click(object sender, EventArgs e)
+        {
+            auto.Accellerare(Velocità);
+        }
     }
 }

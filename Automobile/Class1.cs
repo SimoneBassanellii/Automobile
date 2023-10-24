@@ -10,9 +10,11 @@ namespace Automobile
 {
     public class Automobile 
     {
-        protected int _velocità;
+        protected int _velocità; 
         protected bool _acceso;
         protected int _marcia;
+
+        
 
         public void AccendiMotore()
         {
@@ -31,17 +33,23 @@ namespace Automobile
             }
         }
 
-        public void Accellerare(int Velocità)
+        public string Accellerare()
         {
-            if (_acceso = true && _marcia < 5)
+            if (_acceso && 35 * _marcia > _velocità)
             {
-                Velocità += 5;
+                _velocità += 5;
+                return "";
+
+            }
+            else
+            {
+                return "";
             }
         }
 
         public void Deccellerare(int Velocità)
         {
-            if (_acceso = true && _marcia > 0)
+            if (_acceso && _marcia > 0)
             {
                 Velocità -= 5;
             }

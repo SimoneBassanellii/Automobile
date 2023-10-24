@@ -55,6 +55,7 @@
             this.Acceleratore.TabIndex = 1;
             this.Acceleratore.Text = "Acceleratore";
             this.Acceleratore.UseVisualStyleBackColor = true;
+            this.Acceleratore.Click += new System.EventHandler(this.Acceleratore_Click);
             // 
             // Freno
             // 
