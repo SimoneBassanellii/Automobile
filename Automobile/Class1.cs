@@ -14,7 +14,21 @@ namespace Automobile
         protected bool _acceso;
         protected int _marcia;
 
-        
+        public Automobile(int velocità, int marcia, bool acceso) 
+        {
+            _velocità = velocità;
+            _acceso = acceso;
+            _marcia = marcia;
+        }
+
+
+        //costruttore di copia 
+        public Automobile(Automobile previusAutomobile) 
+        {
+            _velocità = previusAutomobile._velocità;
+            _acceso = previusAutomobile._acceso;
+            _marcia = previusAutomobile._marcia;
+        } 
 
         public void AccendiMotore()
         {
